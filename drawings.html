@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צובעים בכיף</title>
+    <link rel="stylesheet" href="drawings.css">
+</head>
+
+<body onload="showElement('container_drawings')">
+    <div id="allBody">
+        <header>
+            <h1>צובעים ונהנים </h1>
+            <div class="search-box">
+                <img id="searchIcon" src="images/loupe.png" alt="">
+                <input id="searchInput" type="text" placeholder="חיפוש..." oninput="searchDrawings()">
+            </div>
+            <nav>
+                <a href="#" onclick="showElement('container_drawings')">ציורים</a>
+                <a href="#" onclick="showElement('myDrawings')">האוסף שלי</a>
+                <a href="#" id="contact" onclick="showElement('help')">צור קשר</a>
+                <a href="#" id="requests_link" onclick="showElement('container_requests')">צפייה בבקשות</a>
+            </nav>
+        </header>
+        
+        
+        <div class="divMain" id="container_drawings">
+           
+        </div>
+
+        <div class="divMain" id="container_requests">
+            
+            <div class="cardRequests">
+                
+            </div> 
+        </div>
+
+        <div class="divMain" id="myDrawings">
+
+            <h2>האוסף שלי :)</h2>
+    
+           
+    
+        </div>
+
+        <div class="form-container divMain" id="help">
+            <h2>לא מצאתם את התמונה שרציתם?</h2>
+            <form onsubmit="addRequest(event)">
+                <label>אל דאגה, צרו איתנו קשר ונשתדל להעלותה בזמן הקרוב:)</label>
+
+                <!-- <label> אנא כתבו לנו מה חיפשתם, באילו קשיים נתקעתם, מה אהבתם וכו'</label> -->
+                <input type="text" id="requestContent" name="request" required>
+                <button type="submit">שלח בקשה</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <div id="printer">
+        <!-- <img id="printMyImg" src="images/7900573.jpg" alt=""> -->
+    </div>
+
+    <div id="register" class="form-container">
+        <h2>הרשמה לאתר</h2>
+        <form onsubmit="register(event)">
+            <input type="text" name="username" placeholder="שם משתמש" required>
+            <input type="password" name="password" placeholder="סיסמה" required>
+            <input type="email" name="email" placeholder="כתובת מייל" required>
+            <select name="role" required>
+                <option value="">בחר תפקיד</option>
+                <option value="user">משתמש רגיל</option>
+                <option value="admin">מנהל</option>
+            </select>
+            <button type="submit">הרשמה</button>
+        </form>
+        <p>כבר רשום? <a href="#">התחבר כאן</a></p>
+    </div>
+
+    <div id="login" class="form-container">
+        <h2>התחברות לאתר</h2>
+        <form onsubmit="login(event)">
+            <input type="text" name="username" placeholder="שם משתמש" required>
+            <input type="password" name="password" placeholder="סיסמה" required>
+            <button type="submit">התחברות</button>
+        </form>
+        <p>עוד לא רשום? <a onclick="openRegister()" href="#">הירשם כאן</a></p>
+    </div>
+
+    <script src="drawings.js"></script>
+</body>
+
+</html>

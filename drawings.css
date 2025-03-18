@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+}
+
+#allBody {
+    opacity: 0.45;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0vh;
+    background-color: #0c8bc1;
+    color: #fff;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 500px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#searchIcon {
+    margin-top: 0.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+nav {
+    background-color: #6eb2d2;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* ---------container_drawings----- */
+
+#container_drawings {
+    max-width: 85vw;
+    margin: 6rem auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.card {
+    width: 14vw;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card button {
+    width: 80%;
+    text-align: center;
+    background-color: #3393b0;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #3393b0 solid 1px;
+}
+
+/* ----------container_requests--------- */
+
+#container_requests {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width:50vw;
+    margin: 4rem auto;
+}
+
+.cardRequests {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #edf9ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cardRequests button {
+    margin: 0 10px;
+    background-color: #3393b0;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #3393b0 solid 1px;
+}
+
+
+.cardRequests h3 {
+    margin: 1rem;
+}
+
+/* -----------------------help form ------------ */
+
+
+#myDrawings {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff;
+    width: 50vw;
+    min-height: 65vh;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(28, 190, 223, 0.9);
+    padding: 4rem 0rem;
+
+}
+
+#myDrawings h2 {
+    margin-top: 0.5rem;
+    color: #000000;
+    text-shadow: 0 0 6px rgba(28, 190, 223, 0.9);
+}
+
+
+.myDraw {
+    background-color: #f0faff;
+    display: flex;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.drawDetails {
+    margin: auto;
+}
+
+.drawDetails button {
+    margin: 0 10px;
+    background-color: #3393b0;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #3393b0 solid 1px;
+}
+
+.myDraw img {
+    width: 33%;
+}
+
+#printer {
+    z-index: 0.5;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#printMyImg {
+    width: 100%;
+}
+
+
+/* -----------------------help form ------------ */
+
+#help {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 55vw;
+    padding: 5rem 0.1rem;
+    margin: auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#help h2 {
+    margin-bottom: 0.5rem;
+}
+
+#help form {
+    width: 70vw;
+}
+
+#help input {
+    padding: 1rem 0%;
+    font-size: medium;
+}
+
+/* ----------------------- form login&register---------- */
+
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.form-container input {
+    width: 50%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.form-container button {
+    width: 50%;
+    padding: 15px;
+    background-color: #0c8bc1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #096e96;
+    cursor: pointer;
+}
+
+.form-container p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#register,
+#login {
+    background-color: #ffffff;
+    width: 40vw;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(28, 190, 223, 0.5);
+    padding: 4rem 0rem;
+
+}
+
+#register {
+    display: none;
+    top: 3%;
+}
